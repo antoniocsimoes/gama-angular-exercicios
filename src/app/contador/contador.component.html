@@ -1,0 +1,17 @@
+<div class="container">
+    <p class="title">Contador</p>
+
+    <div class="d-flex flex-row justify-content-around">
+      <div class="p-2" (click)="increases()"><fa-icon icon="plus" size="3x"></fa-icon></div>
+      <div class="p-2 cont fa-blink">{{contador}}</div>
+      <div class="p-2" (click)="decreases()"><fa-icon icon="minus" size="3x"></fa-icon></div>
+    </div>
+    <br><br>
+    <p class="resultado">O número {{ contador }} <span [ngClass]="'customMaior'"> é maior que {{ contador -1 }}</span> e <span [ngClass]="'customMenor'">  menor que {{ contador + 1 }}</span></p>
+    
+</div>
+
+
+
+
+
