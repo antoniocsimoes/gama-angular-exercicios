@@ -15,7 +15,8 @@ import { ListaItemComponent } from './lista-item/lista-item.component';
 library.add(fas);
 
 const routes: Routes = [
-  { path: 'lista', component: ListaLinguagensComponent } 
+  { path: 'lista', component: ListaLinguagensComponent } ,
+  { path: 'contador', component: ContadorComponent}
 ]
 
 @NgModule({
