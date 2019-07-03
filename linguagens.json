@@ -1,0 +1,48 @@
+{
+"linguagens":[
+    {
+        "name": "JavaScript",
+        "creator": "Brendan Eich",
+        "year": 1995
+    },
+    {
+        "name": "PHP",
+        "creator": "Rasmus Lerdorf",
+        "year": 1995
+    },
+    {
+        "name": "TypeScript",
+        "creator": "Anders Hejlsberg",
+        "year": 2012
+    },
+    {
+        "name": "Java",
+        "creator": "James Gosling",
+        "year": 1995
+    },
+    {
+        "name": "C#",
+        "creator": "Anders Hejlsber",
+        "year": 2000
+    },
+    {
+        "name": "Python",
+        "creator": "Guido van Rossum",
+        "year": 1990
+    },
+    {
+        "name": "C",
+        "creator": "Dennis Ritchie",
+        "year": 1972
+    },
+    {
+        "name": "HTML",
+        "creator": "Tim Berners-Lee",
+        "year": 1993
+    },
+    {
+        "name": "Ruby",
+        "creator": "Yukihiro Matsumoto",
+        "year": 1995
+    }
+]}
