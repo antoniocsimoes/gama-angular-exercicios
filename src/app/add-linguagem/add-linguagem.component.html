@@ -1,0 +1,59 @@
+<!--
+<form #form="ngForm">
+    {{ list | json }}
+<div>
+    Linguagem:  
+    <input type="text" [(ngModel)]="list.name" #nome='ngModel' required name="nome">
+    <div *ngIf="nome.errors && nome.touched">
+        <div *ngIf="nome?.errors.required">Nome da linguagem é obrigatório!</div>
+    </div>
+</div>
+
+<div>
+    Criador: 
+    <input type="text" [(ngModel)]="list.creator" #criacao='ngModel' required name="criacao">
+    <div *ngIf="criacao.errors && criacao.touched">
+        <div *ngIf="criacao?.errors.required">Nome do criador é obrigatório!</div>
+    </div>
+</div>
+
+<div>
+    Ano: 
+    <input type="number" [(ngModel)]="list.year" #ano="ngModel" required name="ano">
+</div>
+
+
+
+<button [disabled]="form.invalid" class="btn btn-primary" (click)="enviarLista()">Enviar</button>
+</form>
+-->
+
+<div class="container">
+    <div class="row box-cadastro">
+        <div class="col-12">
+            <h3 class="text-center">Cadastro de linguagens</h3>
+            <form #form="ngForm" class="mt-5">
+                <div class="form-group"> 
+                    Nome: 
+                    <input type="text" [(ngModel)]="list.name" #nome='ngModel' required name="nome" class="cadastro">
+                    <div *ngIf="nome.errors && nome.touched">
+                        <div *ngIf="nome?.errors.required">Nome da linguagem é obrigatório!</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    Criador: 
+                    <input type="text" [(ngModel)]="list.creator" #criacao='ngModel' required name="criacao" class="cadastro">
+                    <div *ngIf="criacao.errors && criacao.touched">
+                        <div *ngIf="criacao?.errors.required">Nome do criador é obrigatório!</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    Ano: 
+                    <input type="number" [(ngModel)]="list.year" #ano="ngModel" required name="ano" class="cadastro">
+                </div>
+                <button [disabled]="form.invalid" class="btn-cadastro" (click)="enviarLista()">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+</div>

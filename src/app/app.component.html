@@ -1,13 +1,41 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!--div style="text-align:center">
   <p>Navegação</p><br>
 
-  <a routerLink="/">Index  </a>
+  <a routerLink="/">Index</a>
   <a routerLink="/contador">Contador  </a>
   <a routerLink="/lista">Lista  </a>
+  <a routerLink="/linguagem/add">Formulário</a>
 <router-outlet></router-outlet>
-</div>
+</div-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Index</a>
+    <a class="navbar-brand" routerLink="/contador">Contador</a>
+    <a class="navbar-brand" routerLink="/lista">Lista</a>
+    <a class="navbar-brand" routerLink="/linguagem/add">Formulário</a>
+  </div>
+</nav>
+<router-outlet></router-outlet>
 
+
+<!--div class="container text-center">
+  <div class="row header">
+    <div class="col-sm">
+      <a routerLink="/">Index</a>
+    </div>
+    <div class="col-sm">
+      <a routerLink="/contador">Contador  </a>
+    </div>
+    <div class="col-sm">
+      <a routerLink="/lista">Lista  </a>
+    </div>
+    <div class="col-sm">
+      <a routerLink="/linguagem/add">Formulário</a>
+    </div>
+  </div>
+  
+</div-->
 
 
 

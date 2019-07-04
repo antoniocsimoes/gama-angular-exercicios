@@ -11,12 +11,16 @@ import { ListaLinguagensComponent } from './lista-linguagens/lista-linguagens.co
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaItemComponent } from './lista-item/lista-item.component';
+import { AddLinguagemComponent } from './add-linguagem/add-linguagem.component';
+import {FormsModule } from '@angular/forms';
+import { YearPipe } from './year.pipe';
 
 library.add(fas);
 
 const routes: Routes = [
   { path: 'lista', component: ListaLinguagensComponent } ,
-  { path: 'contador', component: ContadorComponent}
+  { path: 'contador', component: ContadorComponent},
+  { path: 'linguagem/add', component: AddLinguagemComponent}
 ]
 
 @NgModule({
@@ -24,13 +28,16 @@ const routes: Routes = [
     AppComponent,
     ContadorComponent,
     ListaLinguagensComponent,
-    ListaItemComponent
+    ListaItemComponent,
+    AddLinguagemComponent,
+    YearPipe
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

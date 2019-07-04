@@ -1,5 +1,15 @@
-<div>
+<!--div>
     <b>Nome: </b> {{ data.name}} <br>
     <b>Criador: </b> {{ data.creator }} <br>
-    <b>Ano: </b> {{ data.year }} <br>  
+    <b>Ano: </b> {{ data.year | year}} <br>  
+</div-->
+
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Linguagem</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ data.name}}</h6>
+        <p class="card-text">Criada em: {{ data.creator }} </p>
+        <p class="card-text">No ano de: {{ data.year | year}}</p>
+    </div>
 </div>

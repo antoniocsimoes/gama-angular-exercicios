@@ -13,4 +13,9 @@ export class ListaService {
   getTodos(): Observable<Lista[]>{
     return this.httpClient.get<Lista[]>('http://localhost:3000/linguagens');
   }
+
+  adicionarLang(lista:Lista){
+    console.log(lista);
+    return this.httpClient.post('http://localhost:3000/linguagens', lista);
+  }
 }
